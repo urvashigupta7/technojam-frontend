@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from "@material-ui/core";
 import Container from '@material-ui/core/Container';
+import Divider from '@material-ui/core/Divider';
 
 class Achievements extends Component {
 
@@ -45,6 +46,7 @@ class Achievements extends Component {
                     by: "Rahul Chuhan",
                     date: "May 12, 2018",
                     Description: "rahul chuhan Member of Team Teachnojam is the first Gsoc cleared person of Galgotias University",
+                    Description: "Technojam conducting 24 hours hackthon in delhi region at galgotias university. it is recognized by NASA",
                     Image: 'https://tj-static.s3.ap-south-1.amazonaws.com/etc/rahul.jpg',
                     
                 },
@@ -99,7 +101,7 @@ class Achievements extends Component {
 
                             {achie.map(achie => (
 
-                                    <Grid item key={achie.id} xs={12} sm={3} md={4}>
+                                    <Grid item xs={12} sm={3} md={4}>
                                                 <Card style={{
                                                     maxHeight: "410px", minHeight: "410px",
                                                     boxShadow: " 0 30px 35px 0 rgba(0, 0, 0, 0.2), 0 20px 30px 0 rgba(0, 0, 0, 0.19)",
@@ -109,7 +111,7 @@ class Achievements extends Component {
                                                     
                                                     <CardMedia>
 
-                                                        <img alt='' src={achie.Image} width="100%" height="auto" />
+                                                        <img src={achie.Image} width="100%" height="auto" />
 
                                                     </CardMedia>
 

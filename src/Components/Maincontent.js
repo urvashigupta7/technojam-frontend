@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import { aboutus, achievements, contactus, groups, homepage, mentorship, team } from './Pages/'
 import Events from './Pages/Events';
+import Resources from './Pages/Resources';
 import Login from './Pages/Login';
 import Alumni from './Pages/Alumni';
 function Maincontent() {
